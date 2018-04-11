@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослав Шевцов](https://up.htmlacademy.ru/adaptive/14/user/170516).
-* Наставник: `Неизвестно`.
+* Наставник: `Ярослав Шевцов`.
 
 ---
 
