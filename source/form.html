@@ -2,16 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
+      <div class="page-header__container container">
         <a class="logo" href="index.html">
-          <img src="http://placehold.it/36x36" alt="Упрощенный логотип">
+          <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
         </a>
-        <img src="http://placehold.it/100x36" alt="Логотип с назвнаием">
-        <button class="toggle-nav"></button>
+        <button class="toggle-menu">
+          <span>Закрыть</span>
+        </button>
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -32,7 +35,7 @@
         <h1 class="title">Подбор программы</h1>
         <p class="title-text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
         <form class="question" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="question__field">
+          <fieldset class="question__field question__field--line">
             <label class="form-field">
               <span class="form-field__text">Имя:*</span>
               <input class="form-field__control" type="text" placeholder="Барсик">
@@ -46,17 +49,17 @@
               <input class="form-field__control" type="text" value="7">
             </label>
           </fieldset>
-          <fieldset class="question__field">
-            <input type="radio" name="choice">
-            <label class="form-type">Похудение</label>
-            <input type="radio" name="choice">
-            <label class="form-type">Набор массы</label>
-            <input type="radio" name="choice">
-            <label class="form-type">Не знаю (Нужен ваш совет)</label>
+          <fieldset class="question__field question__field--line">
+            <input type="radio" id="radio-1" name="choice" checked>
+            <label class="form-type form-type--radio" for="radio-1">Похудение</label>
+            <input type="radio" id="radio-2" name="choice">
+            <label class="form-type form-type--radio" for="radio-2">Набор массы</label>
+            <input type="radio" id="radio-3" name="choice">
+            <label class="form-type form-type--radio" for="radio-3">Не знаю (Нужен ваш совет)</label>
           </fieldset>
           <fieldset class="question__field">
-            <h3 class="title-h3">Контактные данные (владельца кота)</h3>
-             <label class="form-field">
+            <h3 class="title-line">Контактные данные (владельца кота)</h3>
+            <label class="form-field">
               <span class="form-field__text">E-mail:*</span>
               <input class="form-field__control" type="text" placeholder="kuklachev@gmail.com">
             </label>
@@ -66,53 +69,60 @@
             </label>
           </fieldset>
           <fieldset class="question__field">
-            <h3 class="title-h3">Комментарий</h3>
-            <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
+            <h3 class="title-line">Комментарий</h3>
+            <textarea class="form-field__control" rows="10  " placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="question__field">
-            <h3 class="title-h3">Дополнительно</h3>
-            <input type="checkbox">
-            <label class="form-type">Сахарозаменитель</label>
-            <input type="checkbox">
-            <label class="form-type">Питьевая вода</label>
-            <input type="checkbox">
-            <label class="form-type">Молоко</label>
-            <input type="checkbox">
-            <label class="form-type">Витамины</label>
+            <h3 class="title-line">Дополнительно</h3>
+            <input type="checkbox" id="check-1" checked>
+            <label class="form-type" for="check-1">Сахарозаменитель</label>
+            <input type="checkbox" id="check-2">
+            <label class="form-type" for="check-2">Питьевая вода</label>
+            <input type="checkbox" id="check-3">
+            <label class="form-type" for="check-3">Молоко</label>
+            <input type="checkbox" id="check-4">
+            <label class="form-type" for="check-4">Витамины</label>
           </fieldset>
           <button class="btn">Отправить</button>
-          <p><sup>*</sup>— Обязательные поля</p>
+          <p class="question__text"><sup>*</sup>— Обязательные поля</p>
         </form>
       </section>
-      <div class="container">
-        <section class="invitation">
-          <h2>приглашаем  к сотрудничеству  дилеров!</h2>
-          <p>ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+      <div class="invitation invitation--color">
+        <section class="container invitation__container">
+          <h2 class="invitation__title">приглашаем  к сотрудничеству  дилеров!</h2>
+          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
         </section>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" width="100%" height="365" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" width="100%" height="365" frameborder="0" allowfullscreen></iframe>
+      </div>
     </main>
     <footer class="page-footer">
-      <a class="" href="index.html">
-        <img src="http://placehold.it/100x36" alt="Логотип с назвнаием">
-      </a>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link"></a>
-        </li>
-      </ul>
-      <div class="developer">
-        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="" alt="Логотип академии">
+      <div class="container">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-footer.svg" alt="Логотип с назвнаием">
         </a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"></a>
+          </li>
+        </ul>
+        <div class="developer">
+          <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+          <a class="developer__icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" alt="HTML academy">
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

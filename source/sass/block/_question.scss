@@ -1,0 +1,36 @@
+.question__field {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
+
+  &--line {
+    padding-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      width: calc(100% + 40px);
+      background: $gray-lightest;
+    }
+  }
+}
+
+.question__field input[type="checkbox"],
+.question__field input[type="radio"] {
+  display: none;
+}
+
+.question__field input[type="checkbox"]:checked + label::before,
+.question__field input[type="radio"]:checked + label::before {
+  display: block;
+}
+
+.question__text {
+  text-align: center;
+  margin: 20px 0;
+}

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  background: $color-success;
+  color: $white;
+  cursor: pointer;
+
+  &--light {
+    background: $gray-lightest;
+    color: $black;
+  }
+}

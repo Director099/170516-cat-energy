@@ -1,0 +1,20 @@
+.navigation {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.navigation__list {
+  @include ul-reset();
+  text-align: center;
+}
+
+.navigation__link {
+  display: block;
+  padding: 25px 0;
+  text-transform: uppercase;
+  border-top: 1px solid $gray-light;
+  color: $black;
+}

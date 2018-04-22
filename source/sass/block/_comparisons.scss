@@ -1,0 +1,39 @@
+.comparisons__range {
+  display: flex;
+  justify-content: space-between;
+  max-width: 210px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.comparisons__btn {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+.comparisons__progress {
+  position: relative;
+  max-width: 84px;
+  width: 100%;
+  height: 14px;
+  border: 1px solid $gray-lighter;
+  border-radius: 50px;
+  background: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 50px;
+    background: $color-success;
+    transform: translateY(-50%);
+    transition: $time;
+  }
+}
