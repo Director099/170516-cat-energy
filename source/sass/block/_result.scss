@@ -1,7 +1,7 @@
 .result {
+  @include ul-reset();
   display: flex;
   justify-content: space-between;
-  @include ul-reset();
   margin-bottom: 35px;
 }
 

@@ -1,10 +1,8 @@
 @import "variables";
 @import "mixins";
-
+@import "global/normalize";
 @import "global/fonts";
 @import "global/global";
-@import "global/normalize";
-
 @import "block/container";
 @import "block/toggle-menu";
 @import "block/page-header";

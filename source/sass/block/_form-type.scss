@@ -9,7 +9,7 @@
   cursor: pointer;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
@@ -20,7 +20,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: none;
     position: absolute;
     left: 9px;
@@ -44,9 +44,9 @@
   &--radio::before {
     width: 12px;
     height: 12px;
-    margin-top: 0px;
     border-radius: 50%;
     border: none;
     background: $color-success;
+    transform: translateY(-3px);
   }
 }
