@@ -1,0 +1,45 @@
+.product {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: $gray-lighter;
+    width: calc(100% + 40px);
+  }
+}
+
+.product__info {
+  display: flex;
+}
+
+.product__title {
+  max-width: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__options {
+  width: 100%;
+  font-size: 12px;
+}
+
+.product__options td:last-child{
+  text-align: right;
+}
+
+.product__img {
+  flex: 0 1 100%;
+}
+
+.product__description {
+  flex: 0 1 100%;
+}

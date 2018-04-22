@@ -1,0 +1,52 @@
+.form-type {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray-lighter;
+  }
+
+  &::before {
+    content: '';
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    margin-top: -3px;
+    width: 12px;
+    height: 21px;
+    border-right: 1px solid $color-success;
+    border-bottom: 1px solid $color-success;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--radio::after {
+    border-radius: 50%;
+  }
+
+  &--radio::before {
+    width: 12px;
+    height: 12px;
+    margin-top: 0px;
+    border-radius: 50%;
+    border: none;
+    background: $color-success;
+  }
+}

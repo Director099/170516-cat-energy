@@ -1,0 +1,36 @@
+.main-block {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 305px;
+    width: 100%;
+    background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat top;
+    z-index: -1;
+  }
+}
+
+.main-block__title {
+  font: 400 $fz--h1 $family-oswald;
+  line-height: 1;
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: $white;
+}
+
+.main-block__product {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-block__tagline {
+  font-family: $family-oswald;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+.add-products {
+  margin-bottom: 20px;
+}
+
+.add-products__list {
+  @include ul-reset();
+}
+
+.add-products__item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.add-products__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.add-products__info {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.add-products__info td:last-child {
+  text-align: right;
+}
+
+.add-products__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 290px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: $white;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+}

@@ -1,0 +1,6 @@
+.social {
+  @include ul-reset();
+  padding: 25px 0;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+}

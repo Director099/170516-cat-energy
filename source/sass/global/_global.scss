@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 $fz $family-oswald;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  font-family: $family-arial;
+}
+
+button,
+input,
+textarea {
+  font-family: $family-oswald;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  font-family: $family-arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+fieldset {
+  margin: 0;
+}

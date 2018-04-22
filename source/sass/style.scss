@@ -1,1 +1,34 @@
-@import "global/fonts"
+@import "variables";
+@import "mixins";
+
+@import "global/fonts";
+@import "global/global";
+@import "global/normalize";
+
+@import "block/container";
+@import "block/toggle-menu";
+@import "block/page-header";
+@import "block/logo";
+@import "block/navigation";
+@import "block/main-block";
+@import "block/btn";
+@import "block/program";
+@import "block/title";
+@import "block/instruction";
+@import "block/example";
+@import "block/result";
+@import "block/comparisons";
+@import "block/invitation";
+@import "block/page-footer";
+@import "block/footer-logo";
+@import "block/social";
+@import "block/developer";
+@import "block/map";
+@import "block/product";
+@import "block/product-more";
+@import "block/title-line";
+@import "block/add-products";
+@import "block/question.scss";
+@import "block/form-field";
+@import "block/form-type";
+@import "block/title-text";

@@ -1,0 +1,25 @@
+.instruction {
+
+}
+
+.instruction__list {
+  @include ul-reset();
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instruction__icon {
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background: $color-success;
+}
+
+.instruction__text {
+  margin: 0;
+}

@@ -1,0 +1,21 @@
+.form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-field__control {
+  width: 100%;
+  border: 1px solid $gray-light;
+  padding: 15px;
+}
+
+.form-field__text {
+  flex-shrink: 0;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
