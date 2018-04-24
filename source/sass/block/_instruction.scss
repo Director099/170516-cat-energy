@@ -1,11 +1,46 @@
 .instruction__list {
   @include ul-reset();
+  margin: 0 -15px;
+  counter-reset: section;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .instruction__item {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0 15px;
+
+
+  @media (min-width: $screen-md) {
+    display: block;
+    width: 50%;
+    min-height: 230px;
+    // max-width: 250px;
+
+    &::after {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      left: 140px;
+      top: -38px;
+      font-size: 280px;
+      line-height: 1;
+      font-family: $family-oswald;
+      color: $gray-lightest;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+    width: 25%;
+    // max-width: 250px;
+  }
 }
 
 .instruction__icon {
@@ -14,6 +49,12 @@
   width: 60px;
   height: 60px;
   background: $color-success;
+
+  @media (min-width: $screen-md) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px;
+  }
 }
 
 .instruction__text {

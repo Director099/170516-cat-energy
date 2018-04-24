@@ -33,9 +33,9 @@
     transform: translateY(-50%) rotate(45deg);
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   &--radio::after {
     border-radius: 50%;

@@ -4,6 +4,10 @@
   &--open {
     display: block;
   }
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
 }
 
 .navigation__list {

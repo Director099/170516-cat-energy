@@ -1,0 +1,10 @@
+.catalog {
+
+  margin-left: -30px;
+  margin-right: -30px;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

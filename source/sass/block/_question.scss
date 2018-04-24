@@ -20,6 +20,25 @@
   }
 }
 
+.question__checkbox {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.question__column {
+
+  @media (min-width: $screen-md) {
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 25%;
+  }
+}
+
 .question__field input[type="checkbox"],
 .question__field input[type="radio"] {
   display: none;

@@ -6,16 +6,8 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: $screen-sm) {
-    max-width: $container-sm;
-  }
-
   @media (min-width: $screen-md) {
     max-width: $container-md;
-  }
-
-  @media (min-width: $screen-lg) {
-    max-width: $container-lg;
   }
 
   @media (min-width: $screen-xl) {
