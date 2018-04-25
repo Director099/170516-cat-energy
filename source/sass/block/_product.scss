@@ -2,8 +2,6 @@
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
 
   &::after {
     content: "";
@@ -44,9 +42,9 @@
 }
 
 .product__title {
+  @include font-title-h4();
   max-width: 100px;
   font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -61,9 +59,9 @@
 }
 
 .product__img {
-  flex: 0 1 50%;
+  flex: 0 0 50%;
 }
 
 .product__description {
-  flex: 0 1 50%;
+  flex: 0 0 50%;
 }

@@ -1,5 +1,8 @@
 .navigation {
   display: none;
+  width: 100%;
+  margin-bottom: -13px;
+  margin-top: 13px;
 
   &--open {
     display: block;
@@ -7,18 +10,32 @@
 
   @media (min-width: $screen-md) {
     display: block;
+    margin: 0;
+    width: auto;
   }
 }
 
 .navigation__list {
   @include ul-reset();
   text-align: center;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
 }
 
 .navigation__link {
   display: block;
   padding: 25px 0;
   text-transform: uppercase;
+  margin-left: -20px;
+  margin-right: -20px;
   border-top: 1px solid $gray-light;
   color: $black;
+
+  @media (min-width: $screen-md) {
+    margin: 0;
+    border: none;
+    padding: 15px 20px;
+  }
 }

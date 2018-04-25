@@ -1,11 +1,22 @@
 .page-header {
   border-bottom: 1px solid $gray-light;
+
+  @media (min-width: $screen-md) {
+    border-bottom: none;
+  }
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 13px;
   padding-bottom: 13px;
+
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }

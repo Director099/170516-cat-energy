@@ -1,4 +1,5 @@
 .form-type {
+  @include font-title-h4();
   position: relative;
   display: block;
   padding-left: 50px;

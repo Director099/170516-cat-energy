@@ -1,22 +1,30 @@
 .title-line {
+  @include font-title-line();
   position: relative;
-  // display: inline-block;
-  // padding-right: 20px;
-  font: 400 $fz--h3 $family-oswald;
-  line-height: 1;
+  display: inline-block;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-left: -40px;
   margin-bottom: 30px;
-  // background: $white;
+  background: $white;
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
-    // display: inline-block;
-    // vertical-align: middle;
-    // margin-right: -100%;
-    // margin-left: 20px;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    margin-top: -1.5px;
     height: 3px;
     background: $color-success;
-    // transform: translateY(-50%);
-    // z-index: -1;
+    z-index: -1;
+  }
+
+  &::after {
+    left: 20px;
+  }
+
+  &::before {
+    right: 0;
   }
 }

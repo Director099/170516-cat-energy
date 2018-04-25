@@ -5,6 +5,6 @@
 }
 
 .product-more__title {
-  font-weight: 400;
+  @include font-title-h4();
   text-transform: uppercase;
 }

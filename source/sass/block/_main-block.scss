@@ -13,14 +13,37 @@
     background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat top;
     z-index: -1;
   }
+
+  @media (min-width: $screen-md) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &::after {
+      display: block;
+      width: 50%;
+      height: 100%;
+      min-height: auto;
+      right: 0;
+      left: inherit;
+      background-position: center;
+      background-size: contain;
+    }
+  }
 }
 
 .main-block__title {
-  font: 400 $fz--h1 $family-oswald;
-  line-height: 1;
+  @include font-title();
   margin-bottom: 25px;
   margin-top: 0;
   color: $white;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+    color: $black;
+  }
 }
 
 .main-block__product {
@@ -29,8 +52,12 @@
 }
 
 .main-block__tagline {
-  font-family: $family-oswald;
-  font-weight: 400;
+  @include font-title-h4();
   color: $white;
   text-transform: uppercase;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+    color: $black;
+  }
 }
