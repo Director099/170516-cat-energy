@@ -2,6 +2,18 @@
   background: $gray-lightest;
 }
 
+.example__row {
+  @include row();
+}
+
+.example__column {
+  @include col-xl-2();
+
+  @media (min-width: $screen-md) and (max-width: 1299px){
+    background: $white;
+  }
+}
+
 .example__total {
   font-family: $family-oswald;
   text-align: center;

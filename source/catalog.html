@@ -8,27 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container container">
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
-        </a>
-        <button class="toggle-menu">
-          <span>Закрыть</span>
-        </button>
+      <div class="container">
+        <div class="page-header__container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
+          </a>
+          <button class="toggle-menu">
+            <span>Закрыть</span>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="container">
@@ -209,11 +211,13 @@
               <a class="btn">Заказать</a>
             </div>
           </div>
-          <section class="product-more">
-            <h3 class="product-more__title">Показать еще 100500 товаров</h3>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <button class="btn btn--light">Показать все</button>
-          </section>
+          <div class="catalog__column">
+            <section class="product-more">
+              <h3 class="product-more__title">Показать еще 100500 товаров</h3>
+              <p>На самом деле вкусов гораздо больше!</p>
+              <button class="btn btn--light">Показать все</button>
+            </section>
+          </div>
         </div>
         <section class="add-products">
           <h2 class="title-line">Дополнительные товары</h2>

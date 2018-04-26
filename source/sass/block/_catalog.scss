@@ -1,14 +1,7 @@
 .catalog {
-  margin-left: -30px;
-  margin-right: -30px;
-
-  @media (min-width: $screen-md) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  @include row();
 }
 
 .catalog__column {
-  padding-left: 30px;
-  padding-right: 30px;
+  @include col-2_4();
 }

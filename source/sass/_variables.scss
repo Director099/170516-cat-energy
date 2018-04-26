@@ -5,6 +5,7 @@ $gray-lightest:               #f2f2f2;
 $white:                       #ffffff;
 
 $color-success:               #68b738;
+$color-body:                  #444444;
 
 $fz:                          14px;
 $fz--desktop:                 16px;
@@ -21,6 +22,10 @@ $fz-h3--desktop:              36px;
 $fz-h4:                       16px;
 $fz-h4--desktop:              20px;
 
+$fz-nav:                      20px;
+$fz-nav--tablet:              18px;
+$fz-nav--desktop:             20px;
+
 $family-arial:                "Arial", "Tahoma", sans-serif;
 $family-oswald:               "Oswald", "Arial", sans-serif;
 
@@ -28,6 +33,6 @@ $screen-md:                   768px;
 $screen-xl:                   1300px;
 
 $container-md:                100%;
-$container-xl:                1220px;
+$container-xl:                1260px;
 
 $time:                        0.3s;

@@ -2,12 +2,16 @@
   background: $gray-lightest;
   padding: 20px;
   margin-top: 20px;
+
+  @media (min-width: $screen-md) {
+    padding: 50px 60px;
+  }
 }
 
 .program__title {
+  @include font-title-line();
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .program__link {
@@ -19,8 +23,6 @@
 }
 
 .program__icon {
-  // position: absolute;
-  // left: 0;
   width: 50px;
   height: 50px;
   background: $color-success;

@@ -8,27 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container container">
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
-        </a>
-        <button class="toggle-menu">
-          <span>Закрыть</span>
-        </button>
+      <div class="container">
+        <div class="page-header__container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
+          </a>
+          <button class="toggle-menu">
+            <span>Закрыть</span>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="container">
@@ -65,14 +67,20 @@
           </div>
           <fieldset class="question__field">
             <h3 class="title-line">Контактные данные (владельца кота)</h3>
-            <label class="form-field">
-              <span class="form-field__text">E-mail:*</span>
-              <input class="form-field__control" type="text" placeholder="kuklachev@gmail.com">
-            </label>
-            <label class="form-field">
-              <span class="form-field__text">Телефон:*</span>
-              <input class="form-field__control" type="tel" placeholder="8 (960) 900-60-90">
-            </label>
+            <div class="question__row">
+              <div class="question__column-2">
+                <label class="form-field">
+                  <span class="form-field__text">E-mail:*</span>
+                  <input class="form-field__control" type="text" placeholder="kuklachev@gmail.com">
+                </label>
+              </div>
+              <div class="question__column-2">
+                <label class="form-field">
+                  <span class="form-field__text">Телефон:*</span>
+                  <input class="form-field__control" type="tel" placeholder="8 (960) 900-60-90">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="question__field">
             <h3 class="title-line">Комментарий</h3>
@@ -80,7 +88,7 @@
           </fieldset>
           <fieldset class="question__field">
             <h3 class="title-line">Дополнительно</h3>
-            <div class="question__checkbox">
+            <div class="question__row">
               <div class="question__column">
                 <input type="checkbox" id="check-1" checked>
                 <label class="form-type" for="check-1">Сахарозаменитель</label>
@@ -99,8 +107,14 @@
               </div>
             </div>
           </fieldset>
-          <button class="btn">Отправить</button>
-          <p class="question__text"><sup>*</sup>— Обязательные поля</p>
+          <div class="question__row">
+            <div class="question__col_2">
+              <button class="btn">Отправить</button>
+            </div>
+            <div class="question__col_2">
+              <p class="question__text"><sup>*</sup>— Обязательные поля</p>
+            </div>
+          </div>
         </form>
       </section>
       <div class="invitation invitation--color">

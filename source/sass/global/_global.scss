@@ -6,6 +6,13 @@
 
 body {
   font: 400 $fz $family-oswald;
+  line-height: 18px;
+  color: $color-body;
+
+  @media (min-width: $screen-md) {
+    font-size: $fz--desktop;
+    line-height: 24px;
+  }
 }
 
 a {

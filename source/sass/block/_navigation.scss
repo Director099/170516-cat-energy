@@ -21,10 +21,12 @@
 
   @media (min-width: $screen-md) {
     display: flex;
+    margin-right: -20px;
   }
 }
 
 .navigation__link {
+  @include font-nav();
   display: block;
   padding: 25px 0;
   text-transform: uppercase;
