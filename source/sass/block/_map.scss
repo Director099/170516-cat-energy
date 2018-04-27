@@ -1,4 +1,13 @@
 .map {
-  height: 365px;
+  position: relative;
+  background: $white;
+
+  &--color {
+    background: $gray-lightest;
+  }
+}
+
+.map__iframe {
+  height: 400px;
   border: 0;
 }

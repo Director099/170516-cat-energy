@@ -1,27 +1,37 @@
 .invitation {
-  padding: 30px 0;
-
-  &--color {
-    background: $gray-lightest;
-  }
-}
-
-.invitation__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 0;
+
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    left: 30px;
+    top: 0%;
+    max-width: 570px;
+    background: $white;
+    padding: 35px 30px;
+    transform: translateY(50%);
+  }
 }
 
 .invitation__title {
+  @include font-title-h4();
   flex: 0 0 50%;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
+
+  @media (min-width: $screen-xl) {
+    padding: 30px 40px;
+  }
 }
 
 .invitation__text {
   flex: 0 0 50%;
   margin: 0;
   line-height: 21px;
+
+  @media (min-width: $screen-xl) {
+    padding: 30px 40px;
+  }
 }

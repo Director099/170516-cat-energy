@@ -30,6 +30,21 @@
   }
 }
 
+@mixin col-md-3() {
+  flex: 0 0 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $screen-md) {
+    flex: 0 0 33.333333%;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @mixin col-md-2() {
   flex: 0 0 100%;
   padding-left: 30px;

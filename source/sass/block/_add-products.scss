@@ -37,6 +37,10 @@
   @media (min-width: $screen-md) {
     flex: 0 0 50%;
   }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 33.33333%;
+  }
 }
 
 .add-products__info {
@@ -45,6 +49,10 @@
 
   @media (min-width: $screen-md) {
     flex: 0 0 50%;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 33.33333%;
   }
 }
 
