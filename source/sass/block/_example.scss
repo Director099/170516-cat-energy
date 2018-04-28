@@ -9,7 +9,7 @@
 .example__column {
   @include grid-width();
 
-  @media (min-width: $screen-md) and (max-width: 1299px){
+  @media (min-width: $screen-md) and (max-width: 1299px) {
     background: $white;
     padding-left: 30px;
     padding-right: 30px;

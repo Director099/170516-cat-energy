@@ -20,7 +20,7 @@
   margin-bottom: -20px;
   background: $gray-lightest;
 
-  @media (min-width: $screen-md) and (max-width: 1299px){
+  @media (min-width: $screen-md) and (max-width: 1299px) {
     background: $white;
   }
 }

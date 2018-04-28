@@ -27,7 +27,7 @@
 .question__column {
   @include grid-width();
 
-  @media (min-width: $screen-md) {;
+  @media (min-width: $screen-md) {
     padding-left: 30px;
     padding-right: 30px;
   }
