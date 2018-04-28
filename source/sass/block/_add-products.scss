@@ -2,6 +2,36 @@
   margin-bottom: 20px;
 }
 
+.add-products__row {
+  @include row();
+}
+
+.add-products__column {
+  @include grid-width();
+
+  @media (min-width: $screen-md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &--xl-3 {
+    @media (min-width: $screen-xl) {
+      flex: 0 0 25%;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+
+  &--xl-9 {
+    @media (min-width: $screen-xl) {
+      flex: 0 0 75%;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
 .add-products__list {
   @include ul-reset();
 
@@ -71,4 +101,10 @@
   color: $white;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   background-size: cover;
+}
+
+.add-products__item .btn {
+  @media (min-width: $screen-xl) {
+    flex: 0 0 33.33333%;
+  }
 }

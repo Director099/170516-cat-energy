@@ -24,16 +24,41 @@
   @include row();
 }
 
-.question__column-2 {
-  @include col-xl-2();
-}
-
 .question__column {
-  @include col-2_4();
+  @include grid-width();
+
+  @media (min-width: $screen-md) {;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
-.question__col_2 {
-  @include col-md-2();
+.question__column--xl-4 {
+  @media (min-width: $screen-md) {
+    flex: 0 0 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.question__column--xl-2 {
+  @media (min-width: $screen-md) {
+    flex: 0 0 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .question__field input[type="checkbox"],
