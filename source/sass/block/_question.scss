@@ -5,18 +5,59 @@
   margin-bottom: 30px;
 
   &--line {
-    padding-bottom: 30px;
+    padding: 30px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: 1px solid $gray-lightest;
+    border-bottom: 1px solid $gray-lightest;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: -20px;
-      right: 0;
-      bottom: 0;
-      height: 1px;
-      width: calc(100% + 40px);
-      background: $gray-lightest;
+    @media (min-width: $screen-md) {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 25px;
+      border: 1px solid $gray-lightest;
     }
+  }
+}
+
+.question__row {
+  @include row();
+}
+
+.question__column {
+  @include grid-width();
+
+  @media (min-width: $screen-md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.question__column--xl-4 {
+  @media (min-width: $screen-md) {
+    flex: 0 0 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.question__column--xl-2 {
+  @media (min-width: $screen-md) {
+    flex: 0 0 50%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

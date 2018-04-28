@@ -3,34 +3,49 @@
   text-align: center;
   padding-top: 30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    min-height: 305px;
-    width: 100%;
-    background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat top;
-    z-index: -1;
+  @media (min-width: $screen-md) {
+    max-width: 450px;
+    padding-left: 90px;
+    min-height: 700px;
   }
 }
 
 .main-block__title {
-  font: 400 $fz--h1 $family-oswald;
-  line-height: 1;
+  @include font-title();
   margin-bottom: 25px;
   margin-top: 0;
   color: $white;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+    color: $black;
+  }
 }
 
 .main-block__product {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $screen-md) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    bottom: inherit;
+    right: -70%;
+  }
 }
 
 .main-block__tagline {
-  font-family: $family-oswald;
-  font-weight: 400;
+  @include font-title-h4();
   color: $white;
   text-transform: uppercase;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+    color: $black;
+  }
 }

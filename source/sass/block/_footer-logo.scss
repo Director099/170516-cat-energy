@@ -3,4 +3,9 @@
   max-width: 135px;
   margin: 0 auto;
   padding: 30px 0;
+
+  @media (min-width: $screen-md) {
+    margin-left: inherit;
+    margin-right: auto;
+  }
 }

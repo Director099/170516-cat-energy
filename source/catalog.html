@@ -8,33 +8,35 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container container">
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
-        </a>
-        <button class="toggle-menu">
-          <span>Закрыть</span>
-        </button>
+      <div class="container">
+        <div class="page-header__container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
+          </a>
+          <button class="toggle-menu">
+            <span>Закрыть</span>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="container">
         <h1 class="title">Каталог продукции</h1>
         <div class="catalog">
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/chicken-small-mobile@1x.jpg" alt="Продукт">
@@ -56,10 +58,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/chicken-big-mobile@1x.jpg" alt="Продукт">
@@ -81,10 +83,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/fish-small-mobile@1x.jpg" alt="Продукт">
@@ -106,10 +108,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/fish-big-mobile@1x.jpg" alt="Продукт">
@@ -131,10 +133,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/buckwheat-small-mobile@1x.jpg" alt="Продукт">
@@ -156,10 +158,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/buckwheat-big-mobile@1x.jpg" alt="Продукт">
@@ -181,10 +183,10 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <div class="product">
+          <div class="product catalog__column">
             <div class="product__info">
               <div class="product__img">
                 <img src="img/rice-small-mobile@1x.jpg" alt="Продукт">
@@ -206,98 +208,115 @@
                   </tr>
                 </table>
               </section>
+              <a class="btn">Заказать</a>
             </div>
-            <a class="btn">Заказать</a>
           </div>
-          <section class="product-more">
-            <h3 class="product-more__title">Показать еще 100500 товаров</h3>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <button class="btn btn--light">Показать все</button>
-          </section>
+          <div class="catalog__column">
+            <section class="product-more">
+              <h3 class="product-more__title">Показать еще 100500 товаров</h3>
+              <p>На самом деле вкусов гораздо больше!</p>
+              <button class="btn btn--light">Показать все</button>
+            </section>
+          </div>
         </div>
         <section class="add-products">
           <h2 class="title-line">Дополнительные товары</h2>
-          <ul class="add-products__list">
-            <li class="add-products__item">
-              <h3 class="add-products__title">Сахарозаменитель</h3>
-              <table class="add-products__info">
-                <tr>
-                  <td>1 упаковка (100 г)</td>
-                  <td>100 Р.</td>
-                </tr>
-              </table>
-              <a class="btn">Заказать</a>
-            </li>
-            <li class="add-products__item">
-              <h3 class="add-products__title">Питьевая вода</h3>
-              <table class="add-products__info">
-                <tr>
-                  <td>5 литров</td>
-                  <td>50 Р.</td>
-                </tr>
-              </table>
-              <a class="btn">Заказать</a>
-            </li>
-            <li class="add-products__item">
-              <h3 class="add-products__title">Молоко</h3>
-              <table class="add-products__info">
-                <tr>
-                  <td>1 литр</td>
-                  <td>100 Р.</td>
-                </tr>
-              </table>
-              <a class="btn">Заказать</a>
-            </li>
-            <li class="add-products__item">
-              <h3 class="add-products__title">Витамины</h3>
-              <table class="add-products__info">
-                <tr>
-                  <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
-                </tr>
-              </table>
-              <a class="btn">Заказать</a>
-            </li>
-          </ul>
-          <div class="add-products__action">
-            <img src="" alt="Иконка">
-            <p>Закажите все  и получите чехол для кота в подарок!</p>
+          <div class="add-products__row">
+            <div class="add-products__column add-products__column--xl-9">
+              <ul class="add-products__list">
+                <li class="add-products__item">
+                  <h3 class="add-products__title">Сахарозаменитель</h3>
+                  <table class="add-products__info">
+                    <tr>
+                      <td>1 упаковка (100 г)</td>
+                      <td>100 Р.</td>
+                    </tr>
+                  </table>
+                  <a class="btn">Заказать</a>
+                </li>
+                <li class="add-products__item">
+                  <h3 class="add-products__title">Питьевая вода</h3>
+                  <table class="add-products__info">
+                    <tr>
+                      <td>5 литров</td>
+                      <td>50 Р.</td>
+                    </tr>
+                  </table>
+                  <a class="btn">Заказать</a>
+                </li>
+                <li class="add-products__item">
+                  <h3 class="add-products__title">Молоко</h3>
+                  <table class="add-products__info">
+                    <tr>
+                      <td>1 литр</td>
+                      <td>100 Р.</td>
+                    </tr>
+                  </table>
+                  <a class="btn">Заказать</a>
+                </li>
+                <li class="add-products__item">
+                  <h3 class="add-products__title">Витамины</h3>
+                  <table class="add-products__info">
+                    <tr>
+                      <td>1 упаковка (30 г)</td>
+                      <td>300 Р.</td>
+                    </tr>
+                  </table>
+                  <a class="btn">Заказать</a>
+                </li>
+              </ul>
+            </div>
+            <div class="add-products__column add-products__column--xl-3">
+              <div class="add-products__action">
+                <img src="" alt="Иконка">
+                <p>Закажите все  и получите чехол для кота в подарок!</p>
+              </div>
+            </div>
           </div>
         </section>
       </section>
-      <div class="invitation invitation--color">
-        <section class="container invitation__container">
-          <h2 class="invitation__title">приглашаем  к сотрудничеству  дилеров!</h2>
-          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-        </section>
+      <div class="map map--color">
+        <div class="container">
+          <section class="invitation">
+            <h2 class="invitation__title">приглашаем  к сотрудничеству  дилеров!</h2>
+            <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+          </section>
+        </div>
+        <div class="map__iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" width="100%" height="365" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="footer-logo" href="index.html">
-          <img src="img/logo-footer.svg" alt="Логотип с назвнаием">
-        </a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link"></a>
-          </li>
-        </ul>
-        <div class="developer">
-          <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-          </a>
-          <a class="developer__icon" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" alt="HTML academy">
-          </a>
+        <div class="page-footer__row">
+          <div class="page-footer__column">
+            <a class="footer-logo" href="index.html">
+              <img src="img/logo-footer.svg" alt="Логотип с назвнаием">
+            </a>
+          </div>
+          <div class="page-footer__column">
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__column">
+            <div class="developer">
+              <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+              <a class="developer__icon" href="https://htmlacademy.ru/intensive/adaptive">
+                <img src="img/htmlacademy.svg" alt="HTML academy">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

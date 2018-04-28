@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixins";
+@import "grid-mixins";
 @import "global/normalize";
 @import "global/fonts";
 @import "global/global";
 @import "block/container";
+@import "block/programs";
 @import "block/toggle-menu";
 @import "block/page-header";
 @import "block/logo";
@@ -30,3 +32,5 @@
 @import "block/form-field";
 @import "block/form-type";
 @import "block/title-text";
+@import "block/catalog";
+@import "block/main";

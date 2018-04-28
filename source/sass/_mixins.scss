@@ -1,30 +1,56 @@
-@mixin container() {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $screen-sm) {
-    max-width: $container-sm;
-  }
-
-  @media (min-width: $screen-md) {
-    max-width: $container-md;
-  }
-
-  @media (min-width: $screen-lg) {
-    max-width: $container-lg;
-  }
-
-  @media (min-width: $screen-xl) {
-    max-width: $container-xl;
-  }
-}
-
 @mixin ul-reset() {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@mixin font-title() {
+  font-weight: 400;
+  font-size: $fz-h2;
+  line-height: 1;
+  font-family: $family-oswald;
+  color: $black;
+
+  @media (min-width: $screen-md) {
+    font-size: $fz-h2--desktop;
+  }
+}
+
+@mixin font-title-line() {
+  font-weight: 400;
+  font-size: $fz-h3;
+  line-height: 1;
+  font-family: $family-oswald;
+  color: $black;
+
+  @media (min-width: $screen-md) {
+    font-size: $fz-h3--desktop;
+  }
+}
+
+@mixin font-title-h4() {
+  font-size: $fz-h4;
+  font-weight: 400;
+  font-family: $family-oswald;
+  color: $black;
+
+  @media (min-width: $screen-md) {
+    font-size: $fz-h4--desktop;
+  }
+}
+
+@mixin font-nav() {
+  font-size: $fz-nav;
+  font-weight: 500;
+  font-family: $family-oswald;
+  color: $black;
+
+  @media (min-width: $screen-md) {
+    font-size: $fz-nav--tablet;
+    font-weight: 400;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: $fz-nav--desktop;
+  }
 }

@@ -1,27 +1,22 @@
-.page-footer {
-  background: $gray-lightest;
-
-  @media (min-width: $screen-md) {
-    padding: 30px 0;
-  }
-}
-
-.page-footer__row {
+.programs {
   @include row();
-  align-items: center;
 }
 
-.page-footer__column {
+.programs__column {
   @include grid-width();
 
   @media (min-width: $screen-md) {
-    flex: 0 0 33.333333%;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $screen-xl) {
+    flex: 0 0 50%;
     padding-left: 40px;
     padding-right: 40px;
   }
+}
+
+.programs__ident {
+  margin-top: 20px;
 }

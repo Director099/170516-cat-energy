@@ -1,6 +1,5 @@
 .title {
-  font-size: $fz--h2;
-  font-weight: 400;
+  @include font-title();
   margin-bottom: 30px;
   padding-top: 30px;
 }

@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+
+  @media (min-width: $screen-md) {
+    justify-content: flex-end;
+  }
 }
 
 .developer__name {

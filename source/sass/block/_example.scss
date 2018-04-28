@@ -2,6 +2,26 @@
   background: $gray-lightest;
 }
 
+.example__row {
+  @include row();
+}
+
+.example__column {
+  @include grid-width();
+
+  @media (min-width: $screen-md) and (max-width: 1299px) {
+    background: $white;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    flex: 0 0 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .example__total {
   font-family: $family-oswald;
   text-align: center;
