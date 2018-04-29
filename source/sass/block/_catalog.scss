@@ -1,5 +1,6 @@
 .catalog {
   @include row();
+  margin-bottom: 50px;
 }
 
 .catalog__column {

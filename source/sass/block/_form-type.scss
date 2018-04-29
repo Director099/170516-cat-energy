@@ -2,10 +2,10 @@
   @include font-title-h4();
   position: relative;
   display: block;
-  padding-left: 50px;
+  padding-left: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-transform: uppercase;
   cursor: pointer;
 
@@ -18,6 +18,11 @@
     width: 30px;
     height: 30px;
     border: 1px solid $gray-lighter;
+
+    @media (min-width: $screen-md) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::before {
@@ -32,22 +37,44 @@
     border-right: 1px solid $color-success;
     border-bottom: 1px solid $color-success;
     transform: translateY(-50%) rotate(45deg);
+
+    @media (min-width: $screen-md) {
+      left: 15px;
+    }
   }
 
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
+  &--radio {
+    &::after {
+      border-radius: 50%;
+    }
 
-  &--radio::after {
-    border-radius: 50%;
+    &::before {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: none;
+      background: $color-success;
+      margin-top: 0;
+
+      @media (min-width: $screen-md) {
+        left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &--radio::before {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: none;
-    background: $color-success;
-    transform: translateY(-3px);
+  &--check {
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    padding-left: 62px;
   }
 }

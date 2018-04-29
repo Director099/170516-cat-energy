@@ -7,7 +7,7 @@
       content: "";
       position: absolute;
       left: 0;
-      min-height: 305px;
+      min-height: 306px;
       width: 100%;
       background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat bottom;
       z-index: -1;
@@ -17,7 +17,6 @@
       }
 
       @media (min-width: $screen-xl) {
-
         display: block;
         width: 50%;
         height: 100%;
@@ -41,8 +40,13 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-header--preview .navigation__link {

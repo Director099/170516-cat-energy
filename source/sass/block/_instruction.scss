@@ -2,6 +2,7 @@
   @include ul-reset();
   @include row();
   counter-reset: section;
+  margin-bottom: 23px;
 }
 
 .instruction__item {

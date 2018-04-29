@@ -1,22 +1,46 @@
 .form-field {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   &:last-child {
-    // margin-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 22px;
   }
 }
 
 .form-field__control {
   width: 100%;
   border: 1px solid $gray-light;
-  padding: 15px;
+  padding: 14px 15px;
+
+  &--textarea {
+    height: 151px;
+
+    @media (min-width: $screen-md) {
+      height: 173px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 15px;
+  }
 }
 
 .form-field__text {
   @include font-title-h4();
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 15px;
   text-transform: uppercase;
+}
+
+.form-field.form-field--ident {
+  margin-bottom: 10px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
 }

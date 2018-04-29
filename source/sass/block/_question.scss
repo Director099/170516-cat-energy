@@ -1,11 +1,29 @@
+.question {
+  margin-bottom: 31px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 72px;
+  }
+}
+
 .question__field {
   position: relative;
   border: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 75px;
+  }
+
+  &--ident-small {
+    @media (min-width: $screen-md) {
+      margin-bottom: 20px;
+    }
+  }
 
   &--line {
-    padding: 30px 20px;
+    padding: 15px 20px;
     margin-left: -20px;
     margin-right: -20px;
     border-top: 1px solid $gray-lightest;
@@ -16,6 +34,12 @@
       margin-right: 0;
       padding: 25px;
       border: 1px solid $gray-lightest;
+    }
+  }
+
+  &--ident {
+    @media (min-width: $screen-md) {
+      margin-bottom: 60px;
     }
   }
 }
@@ -73,5 +97,17 @@
 
 .question__text {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0px;
+
+  @media (min-width: $screen-md) {
+    margin: 15px 0;
+    text-align: left;
+  }
+}
+
+.question__btn {
+  @media (min-width: $screen-md) {
+    padding: 15px;
+    font-size: 20px;
+  }
 }
