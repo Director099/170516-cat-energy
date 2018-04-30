@@ -1,6 +1,5 @@
 .product {
   position: relative;
-  margin-bottom: 0px;
   padding-bottom: 25px;
 
   &::after {
@@ -12,10 +11,8 @@
     height: 1px;
     background: $gray-lighter;
     width: calc(100% + 40px);
-  }
 
-  @media (min-width: $screen-md) {
-    &::after {
+    @media (min-width: $screen-md) {
       display: none;
     }
   }
@@ -65,14 +62,12 @@
 }
 
 .product__options tr {
-
   @media (min-width: $screen-md) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .product__options td {
-
   &:last-child {
     text-align: right;
   }

@@ -8,15 +8,15 @@
 }
 
 .program__title {
-  position: relative;
   @include font-title-line();
+  position: relative;
   margin-top: 0;
   margin-bottom: 35px;
   text-transform: uppercase;
   padding-left: 70px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;

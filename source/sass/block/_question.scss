@@ -114,7 +114,8 @@
 
 .question__text {
   text-align: center;
-  margin: 20px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $screen-md) {
     margin: 15px 0;
