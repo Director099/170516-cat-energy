@@ -37,5 +37,9 @@
     @media (min-width: $screen-md) {
       margin-bottom: 50px;
     }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 55px;
+    }
   }
 }

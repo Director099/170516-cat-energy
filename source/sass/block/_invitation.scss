@@ -11,12 +11,12 @@
 
   @media (min-width: $screen-xl) {
     position: absolute;
-    left: 30px;
+    left: 40px;
     top: 0%;
     max-width: 570px;
     background: $white;
     padding: 35px 30px;
-    transform: translateY(50%);
+    transform: translateY(44%);
   }
 }
 
@@ -34,6 +34,7 @@
 
   @media (min-width: $screen-xl) {
     padding: 30px 40px;
+    max-width: inherit;
   }
 }
 
@@ -49,11 +50,12 @@
 
   @media (min-width: $screen-xl) {
     padding: 30px 40px;
+    max-width: inherit;
   }
 }
 
 .invitation__text span {
-  @media (min-width: $screen-md) and (max-width: 1299px) {
+  @media (min-width: $screen-md) {
     display: block;
     margin-top: 15px;
   }

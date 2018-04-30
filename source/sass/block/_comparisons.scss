@@ -4,6 +4,10 @@
   max-width: 195px;
   margin: 0 auto;
   padding: 35px 0;
+
+  @media (min-width: $screen-md) {
+    max-width: 575px;
+  }
 }
 
 .comparisons__btn {

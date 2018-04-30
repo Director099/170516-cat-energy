@@ -47,6 +47,11 @@
     padding-top: 28px;
     padding-bottom: 30px;
   }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 58px;
+    padding-bottom: 48px;
+  }
 }
 
 .page-header--preview .navigation__link {

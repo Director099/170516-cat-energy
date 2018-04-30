@@ -4,6 +4,10 @@
   @media (min-width: $screen-md) {
     margin-bottom: 72px;
   }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 80px;
+  }
 }
 
 .question__field {
@@ -16,9 +20,17 @@
     margin-bottom: 75px;
   }
 
+  @media (min-width: $screen-xl) {
+    margin-bottom: 62px;
+  }
+
   &--ident-small {
     @media (min-width: $screen-md) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 30px;
     }
   }
 
@@ -26,14 +38,14 @@
     padding: 15px 20px;
     margin-left: -20px;
     margin-right: -20px;
-    border-top: 1px solid $gray-lightest;
-    border-bottom: 1px solid $gray-lightest;
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
 
     @media (min-width: $screen-md) {
       margin-left: 0;
       margin-right: 0;
       padding: 25px;
-      border: 1px solid $gray-lightest;
+      border: 1px solid $gray-light;
     }
   }
 
@@ -82,6 +94,11 @@
     flex: 0 0 50%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

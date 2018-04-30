@@ -1,6 +1,11 @@
 .product-more {
   margin-top: 77px;
   text-align: center;
+
+  @media (min-width: $screen-md) {
+    padding: 40px;
+    border: 1px solid $gray-lightest;
+  }
 }
 
 .product-more__title {
