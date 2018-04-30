@@ -8,6 +8,10 @@
 }
 
 .map__iframe {
-  height: 400px;
+  height: 365px;
   border: 0;
+
+  @media (min-width: $screen-xl) {
+    height: 400px;
+  }
 }

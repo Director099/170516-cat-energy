@@ -2,10 +2,10 @@
   @include font-title-line();
   position: relative;
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 22px;
   padding-left: 40px;
   margin-left: -40px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   background: $white;
 
   &::after,
@@ -14,8 +14,8 @@
     position: absolute;
     top: 50%;
     width: 100vw;
-    margin-top: -1.5px;
     height: 3px;
+    margin-top: 2px;
     background: $color-success;
     z-index: -1;
   }
@@ -26,5 +26,20 @@
 
   &::before {
     right: 0;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-right: 40px;
+    margin-bottom: 75px;
+  }
+
+  &--ident {
+    @media (min-width: $screen-md) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 55px;
+    }
   }
 }

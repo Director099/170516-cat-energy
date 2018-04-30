@@ -1,7 +1,7 @@
 .main-block {
   position: relative;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 27px;
 
   @media (min-width: $screen-md) {
     max-width: 450px;
@@ -12,7 +12,7 @@
 
 .main-block__title {
   @include font-title();
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-top: 0;
   color: $white;
 
@@ -24,7 +24,7 @@
 
 .main-block__product {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 
   @media (min-width: $screen-md) {
     position: absolute;
@@ -40,9 +40,12 @@
 }
 
 .main-block__tagline {
-  @include font-title-h4();
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $family-oswald;
   color: $white;
   text-transform: uppercase;
+  margin-bottom: 25px;
 
   @media (min-width: $screen-md) {
     text-align: left;

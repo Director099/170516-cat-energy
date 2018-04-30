@@ -8,9 +8,14 @@
   background: $color-success;
   color: $white;
   cursor: pointer;
+  font-size: 16px;
 
   &--light {
     background: $gray-lightest;
     color: $black;
+  }
+
+  &--small {
+    font-size: 14px;
   }
 }

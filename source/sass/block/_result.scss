@@ -8,7 +8,7 @@
 .result__item {
   max-width: 124px;
   width: 100%;
-  padding: 5px 10px 0;
+  padding: 15px 10px 5px;
   text-align: center;
   border: 1px solid $gray-lighter;
   border-radius: 5px;
@@ -33,5 +33,6 @@
 
 .result__text {
   font-size: 12px;
-  margin: 0;
+  line-height: 1;
+  margin: 8px 0 0;
 }

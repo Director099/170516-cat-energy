@@ -1,5 +1,16 @@
 .title {
   @include font-title();
-  margin-bottom: 30px;
-  padding-top: 30px;
+  margin-bottom: 40px;
+  padding-top: 28px;
+
+  &--ident {
+    @media (min-width: $screen-md) and (max-width: 1299px) {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 55px;
+  }
 }

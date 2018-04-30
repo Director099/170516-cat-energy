@@ -1,21 +1,57 @@
+.question {
+  margin-bottom: 31px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 80px;
+  }
+}
+
 .question__field {
   position: relative;
   border: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 62px;
+  }
+
+  &--ident-small {
+    @media (min-width: $screen-md) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 30px;
+    }
+  }
 
   &--line {
-    padding: 30px 20px;
+    padding: 15px 20px;
     margin-left: -20px;
     margin-right: -20px;
-    border-top: 1px solid $gray-lightest;
-    border-bottom: 1px solid $gray-lightest;
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
 
     @media (min-width: $screen-md) {
       margin-left: 0;
       margin-right: 0;
       padding: 25px;
-      border: 1px solid $gray-lightest;
+      border: 1px solid $gray-light;
+    }
+  }
+
+  &--ident {
+    @media (min-width: $screen-md) {
+      margin-bottom: 60px;
     }
   }
 }
@@ -59,6 +95,11 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: $screen-md) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .question__field input[type="checkbox"],
@@ -73,5 +114,18 @@
 
 .question__text {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    margin: 15px 0;
+    text-align: left;
+  }
+}
+
+.question__btn {
+  @media (min-width: $screen-md) {
+    padding: 15px;
+    font-size: 20px;
+  }
 }

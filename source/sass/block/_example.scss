@@ -6,6 +6,10 @@
   @include row();
 }
 
+.example__text {
+  margin-bottom: 20px;
+}
+
 .example__column {
   @include grid-width();
 
@@ -26,6 +30,7 @@
   font-family: $family-oswald;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 .example__img {
