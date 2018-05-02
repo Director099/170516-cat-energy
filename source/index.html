@@ -11,7 +11,11 @@
       <div class="container">
         <div class="page-header__container">
           <a class="logo" href="index.html">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Упрощенный логотип">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
+            </picture>
           </a>
           <button class="toggle-menu">
             <span>Закрыть</span>
@@ -37,7 +41,11 @@
         <section class="main-block">
           <h1 class="main-block__title">Функциональное питание для котов</h1>
           <p class="main-block__tagline">Занялся собой? Займись котом!</p>
-          <img class="main-block__product" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Продукт">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="main-block__product" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт">
+          </picture>
           <a class="btn btn--small" href="form.html">Подобрать программу</a>
         </section>
         <div class="programs">
