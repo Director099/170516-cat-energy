@@ -63,6 +63,13 @@
       border-bottom: 1px solid $gray-lighter;
     }
   }
+
+  @media (min-width: $screen-xl) {
+    padding: 15px 0;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .add-products__title {
@@ -76,6 +83,7 @@
 
   @media (min-width: $screen-xl) {
     flex: 0 0 33.33333%;
+    margin-bottom: 0px;
   }
 }
 
@@ -90,11 +98,20 @@
 
   @media (min-width: $screen-xl) {
     flex: 0 0 33.33333%;
+    margin-bottom: 0;
   }
 }
 
-.add-products__info td:last-child {
-  text-align: right;
+.add-products__info td {
+
+  &:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: $screen-md) {
+    text-align: right;
+    width: 50%;
+  }
 }
 
 .add-products__action {
@@ -106,8 +123,18 @@
   padding: 10px;
   text-align: center;
   color: $white;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+
+  @media (min-width: $screen-md) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $screen-xl) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
 }
 
 .add-products__item .btn {
