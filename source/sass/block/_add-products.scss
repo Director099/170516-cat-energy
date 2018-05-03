@@ -137,6 +137,12 @@
   }
 }
 
+.add-products__action svg {
+  fill: $white;
+  display: block;
+  margin: 0 auto;
+}
+
 .add-products__item .btn {
   @media (min-width: $screen-xl) {
     flex: 0 0 33.33333%;
