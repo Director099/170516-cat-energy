@@ -11,6 +11,10 @@
   height: 365px;
   border: 0;
 
+  @media (min-width: $screen-md) {
+    height: 395px;
+  }
+
   @media (min-width: $screen-xl) {
     height: 400px;
   }

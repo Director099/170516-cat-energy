@@ -3,6 +3,10 @@
   @include row();
   counter-reset: section;
   margin-bottom: 23px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
 }
 
 .instruction__item {
@@ -34,6 +38,7 @@
     padding-right: 30px;
     display: block;
     min-height: 230px;
+    margin-bottom: 87px;
 
     &::after {
       counter-increment: section;
@@ -46,6 +51,11 @@
       font-family: $family-oswald;
       color: $gray-lightest;
       z-index: -1;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 55px;
     }
   }
 
@@ -82,4 +92,8 @@
 
 .instruction__text {
   margin: 0;
+
+  @media (min-width: $screen-md) {
+    max-width: 250px;
+  }
 }

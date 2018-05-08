@@ -3,6 +3,17 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+
+  @media (min-width: $screen-md) {
+    max-width: 365px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 50px;
+  }
 }
 
 .result__item {
@@ -12,16 +23,29 @@
   text-align: center;
   border: 1px solid $gray-lighter;
   border-radius: 5px;
+
+  @media (min-width: $screen-md) {
+    padding: 23px 10px 20px;
+    max-width: 162px;
+  }
 }
 
 .result__wrapper {
   max-width: 105px;
   padding: 0 10px 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -20px;
   background: $gray-lightest;
 
   @media (min-width: $screen-md) and (max-width: 1299px) {
     background: $white;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: inherit;
+    padding: 0;
+    margin-bottom: -25px;
   }
 }
 
@@ -29,10 +53,19 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $screen-md) {
+    font-size: 30px;
+  }
 }
 
 .result__text {
   font-size: 12px;
   line-height: 1;
   margin: 8px 0 0;
+
+  @media (min-width: $screen-md) {
+    font-size: 14px;
+    margin: 10px 0 0;
+  }
 }

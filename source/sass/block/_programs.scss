@@ -18,5 +18,13 @@
 }
 
 .programs__ident {
-  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
+}
+
+.programs__column:last-child .programs__ident {
+  margin-bottom: 0px;
 }

@@ -1,5 +1,15 @@
 .example {
   background: $gray-lightest;
+
+  @media (min-width: $screen-md) and (max-width: 1299px) {
+    // margin-top: -40px;
+    border-top: 1px solid $gray-lighter;
+    background: linear-gradient(to top, $gray-lightest 42.7%, $white 30%);
+  }
+
+  @media (min-width: $screen-xl) {
+    background: linear-gradient(to top, $gray-lightest 70%, $white 30%);
+  }
 }
 
 .example__row {
@@ -13,8 +23,13 @@
 .example__column {
   @include grid-width();
 
-  @media (min-width: $screen-md) and (max-width: 1299px) {
-    background: $white;
+  // &--color {
+  //   @media (min-width: $screen-md) and (max-width: 1299px) {
+  //     background: $white;
+  //   }
+  // }
+
+  @media (min-width: $screen-md) {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -31,9 +46,38 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
+
+  @media (min-width: $screen-md) {
+    max-width: 192px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: inherit;
+    text-align: left;
+  }
+}
+
+.example__total span {
+  @media (min-width: $screen-xl) {
+    display: inline-block;
+    margin-right: 65px;
+  }
 }
 
 .example__img {
   display: block;
   margin: 0 auto;
+}
+
+.example__wrapper {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }

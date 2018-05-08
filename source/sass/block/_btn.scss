@@ -9,6 +9,7 @@
   color: $white;
   cursor: pointer;
   font-size: 16px;
+  line-height: 20px;
 
   &--light {
     background: $gray-lightest;
@@ -21,6 +22,7 @@
     @media (min-width: $screen-md) {
       font-size: 20px;
       width: auto;
+      padding: 14px 27px;
     }
   }
 }

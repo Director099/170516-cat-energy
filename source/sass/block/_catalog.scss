@@ -1,6 +1,10 @@
 .catalog {
   @include row();
   margin-bottom: 50px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
 }
 
 .catalog__column {
@@ -10,7 +14,8 @@
     flex: 0 0 50%;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 140px;
+    margin-top: 95px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $screen-xl) {
