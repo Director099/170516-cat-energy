@@ -2,7 +2,6 @@
   background: $gray-lightest;
 
   @media (min-width: $screen-md) and (max-width: 1299px) {
-    // margin-top: -40px;
     border-top: 1px solid $gray-lighter;
     background: linear-gradient(to top, $gray-lightest 42.7%, $white 30%);
   }
@@ -22,12 +21,6 @@
 
 .example__column {
   @include grid-width();
-
-  // &--color {
-  //   @media (min-width: $screen-md) and (max-width: 1299px) {
-  //     background: $white;
-  //   }
-  // }
 
   @media (min-width: $screen-md) {
     padding-left: 30px;

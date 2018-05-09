@@ -9,8 +9,15 @@
       left: 0;
       min-height: 306px;
       width: 100%;
-      background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat bottom;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-color: #63a73a;
+      background-position: bottom;
+      background-repeat: no-repeat;
       z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-mobile@2x.jpg");
+      }
 
       @media (min-width: $screen-md) {
         display: none;
@@ -24,8 +31,15 @@
         top: 0;
         right: 0;
         left: inherit;
-        background: #65a93c url("../img/index-background-desktop@1x.jpg") no-repeat right bottom;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-color: #63a73a;
+        background-position: bottom;
+        background-repeat: no-repeat;
         background-size: cover;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
       }
     }
   }
@@ -45,7 +59,6 @@
 
   @media (min-width: $screen-md) {
     padding-top: 21px;
-    // padding-bottom: 23px;
     padding-bottom: 0;
   }
 
@@ -58,5 +71,11 @@
 .page-header--preview .navigation__link {
   @media (min-width: $screen-xl) {
     color: $white;
+  }
+}
+
+.page-header--preview .navigation__link--active::after {
+  @media (min-width: $screen-xl) {
+    background: $white;
   }
 }

@@ -15,9 +15,12 @@
 
 .social__item {
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .social__icon {
+  fill: #666666;
+  transition: $time;
 
   @media (min-width: $screen-md) {
     &--vk {
@@ -34,5 +37,13 @@
       width: 14px;
       height: 28px;
     }
+  }
+
+  &:hover {
+    fill: $color-success;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

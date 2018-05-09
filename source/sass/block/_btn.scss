@@ -10,10 +10,27 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
+  transition: $time;
+
+  &:hover {
+    background: $btn--hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 
   &--light {
     background: $gray-lightest;
     color: $black;
+
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
   }
 
   &--small {

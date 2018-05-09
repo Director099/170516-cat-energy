@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
 
   @media (min-width: $screen-md) {
     justify-content: flex-end;
@@ -10,10 +10,29 @@
 }
 
 .developer__name {
+  display: inline-block;
   font-family: $family-arial;
   color: $black;
+  transition: $time;
+
+  @media (min-width: $screen-md) {
+    margin-right: 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer__icon svg {
   fill: #666;
+  transition: $time;
+
+  &:hover {
+    fill: $color-success;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

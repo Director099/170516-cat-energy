@@ -39,6 +39,7 @@
   color: $black;
   background: $gray-lightest;
   z-index: 1;
+  transition: $time;
 
   &::after {
     content: "";
@@ -50,11 +51,20 @@
     background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
     transform: translateY(-50%);
     z-index: -1;
+    transition: $time;
   }
 
   @media (min-width: $screen-md) {
     padding-right: 20px;
     font-size: 20px;
+  }
+
+  &:hover::after {
+    right: -36px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
