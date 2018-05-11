@@ -24,6 +24,11 @@
   }
 }
 
+.developer__icon {
+  margin-right: -5px;
+  margin-top: 3px;
+}
+
 .developer__icon svg {
   fill: #666;
   transition: $time;

@@ -14,9 +14,10 @@
 
   @media (min-width: $screen-xl) {
     min-height: 530px;
-    height: calc(100vh - 167px);
+    // height: calc(100vh - 167px);
     padding-top: 55px;
-    margin-bottom: 60px;
+    padding-left: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -48,7 +49,7 @@
 
   @media (min-width: $screen-xl) {
     position: absolute;
-    top: 0;
+    top: -25px;
     left: 50%;
     bottom: inherit;
     margin: auto;
@@ -69,5 +70,9 @@
     line-height: 1;
     margin-bottom: 45px;
     color: $black;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 50px;
   }
 }

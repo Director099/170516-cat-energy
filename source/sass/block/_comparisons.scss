@@ -1,5 +1,6 @@
 .comparisons {
   margin-top: 25px;
+  // margin-top: 0px;
 
   @media (min-width: screen-md) {
     margin-top: 60px;
@@ -16,7 +17,8 @@
 
   @media (min-width: $screen-md) {
     max-width: 575px;
-    padding: 25px 0 75px;
+    // padding: 25px 0 75px;
+    padding: 10px 0 70px;
   }
 }
 
@@ -75,7 +77,7 @@
   @media (min-width: $screen-md) {
     max-width: inherit;
     height: 6px;
-    margin: 8px 25px 0;
+    margin: 0px 25px 0;
     background: $gray-lighter;
   }
 }
@@ -118,6 +120,58 @@
     &:active {
       border: 2px solid $color-success;
       box-shadow: 0 3px 3px 1px rgba($black, .25);
+    }
+  }
+}
+
+.comparisons__group-pick {
+
+  @media (min-width: $screen-md) {
+    position: relative;
+    display: flex;
+    height: 560px;
+  }
+
+  @media (min-width: $screen-xl) {
+    height: 500px;
+  }
+}
+
+.comparisons__img {
+  display: block;
+  margin: 0 auto;
+  // max-width: inherit;
+
+  &--after {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &--after {
+      clip: rect(auto, auto, auto, 345px);
+    }
+
+    &--before {
+      clip: rect(auto, 345px, auto, auto);
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+    &--after {
+      clip: rect(auto, auto, auto, 285px);
+    }
+
+    &--before {
+      clip: rect(auto, 285px, auto, auto);
     }
   }
 }

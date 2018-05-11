@@ -6,7 +6,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks('grunt-svgstore');
-  grunt.loadNpmTasks('grunt-svgmin');
 
   grunt.initConfig({
     sass: {

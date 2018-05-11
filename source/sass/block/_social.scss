@@ -10,12 +10,25 @@
   @media (min-width: $screen-md) {
     border-top: none;
     border-bottom: none;
+    justify-content: flex-start;
   }
 }
 
 .social__item {
-  margin: 0 20px;
+  margin: 0 16px;
   cursor: pointer;
+
+  &--ident {
+    margin: 0 24px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 11px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    margin: 0 18px;
+  }
 }
 
 .social__icon {
