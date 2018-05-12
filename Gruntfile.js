@@ -1,13 +1,54 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
-  grunt.loadNpmTasks('grunt-svgstore');
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "source/fonts/**/*.{woff,woff2}",
+            "source/img/**",
+            "source/js/**",
+            "source/css/**",
+            "source/*.html"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg,svg}"]
+        }]
+      }
+    },
+
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg}"]
+        }]
+      }
+    },
+
     sass: {
       style: {
         files: {
@@ -24,6 +65,17 @@ module.exports = function(grunt) {
           ]
         },
         src: "source/css/*.css"
+      }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "source/css/style.min.css": ["source/css/style.css"]
+        }
       }
     },
 
@@ -48,25 +100,36 @@ module.exports = function(grunt) {
 
     svgstore: {
       options: {
+        options: {
+          includeTitleElement: false
+        },
         formatting : {
           indent_size : 2
         }
       },
-      default: {
+      sprite: {
         files: {
-          'source/img/sprite.svg': 'source/img/*.svg',
-        },
-      },
+          "source/img/sprite.svg": ["source/img/*.svg"]
+        }
+      }
     },
 
     watch: {
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"]
+        tasks: ["sass", "postcss", "csso"]
       }
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask('svg', ['svgstore']);
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "sass",
+    "postcss",
+    "csso",
+    "svgstore",
+    "imagemin"
+  ]);
 };

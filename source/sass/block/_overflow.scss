@@ -1,7 +1,7 @@
-.owerflow {
+.overflow {
   overflow: hidden;
 
   &--none {
-    overflow: auto;
+    overflow: visible;
   }
 }
