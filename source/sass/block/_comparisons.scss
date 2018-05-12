@@ -1,9 +1,9 @@
 .comparisons {
   margin-top: 25px;
-  // margin-top: 0px;
 
-  @media (min-width: screen-md) {
-    margin-top: 60px;
+  @media (min-width: $screen-xl) {
+    position: relative;
+    margin-top: 10px;
   }
 }
 
@@ -17,8 +17,13 @@
 
   @media (min-width: $screen-md) {
     max-width: 575px;
-    // padding: 25px 0 75px;
     padding: 10px 0 70px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-left: auto;
+    margin-right: inherit;
+    padding: 30px 0 70px;
   }
 }
 
@@ -87,7 +92,7 @@
   @media (min-width: $screen-md) {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50.5%;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -166,12 +171,14 @@
   }
 
   @media (min-width: $screen-xl) {
+    left: 50px;
+
     &--after {
-      clip: rect(auto, auto, auto, 285px);
+      clip: rect(auto, auto, auto, 365px);
     }
 
     &--before {
-      clip: rect(auto, 285px, auto, auto);
+      clip: rect(auto, 365px, auto, auto);
     }
   }
 }

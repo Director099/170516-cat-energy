@@ -10,7 +10,6 @@
   @media (min-width: $screen-md) {
     border-top: none;
     border-bottom: none;
-    justify-content: flex-start;
   }
 }
 
@@ -18,16 +17,16 @@
   margin: 0 16px;
   cursor: pointer;
 
+  @media (min-width: $screen-md) {
+    margin: 0 10px;
+  }
+
   &--ident {
     margin: 0 24px;
 
     @media (min-width: $screen-md) {
-      margin: 0 11px;
+      margin: 0 20px;
     }
-  }
-
-  @media (min-width: $screen-md) {
-    margin: 0 18px;
   }
 }
 

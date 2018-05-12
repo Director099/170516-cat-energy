@@ -7,7 +7,20 @@
   }
 
   @media (min-width: $screen-xl) {
-    background: linear-gradient(to top, $gray-lightest 70%, $white 30%);
+    background: $white;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 72%;
+      width: 100%;
+      background: linear-gradient(to right, $gray-lightest 71.8%, #eaeaea 28.2%);
+      z-index: -1;
+    }
   }
 }
 
@@ -21,20 +34,51 @@
   @media (min-width: $screen-md) {
     margin-bottom: 27px;
   }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 47px;
+    margin-top: 148px;
+  }
 }
 
 .example__column {
   @include grid-width();
 
   @media (min-width: $screen-md) {
+    position: relative;
     padding-left: 30px;
     padding-right: 30px;
+    z-index: 1;
+
+    &--color {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 67.3%;
+        background: linear-gradient(to right, $gray-lightest 50%, #eaeaea 50%);
+        z-index: -1;
+      }
+    }
   }
 
   @media (min-width: $screen-xl) {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
     padding-left: 40px;
     padding-right: 40px;
+
+    &--xl-7 {
+      flex: 0 0 60%;
+    }
+
+    &--color {
+      &::after {
+        height: 72%;
+        background: linear-gradient(to right, $gray-lightest 58%, #eaeaea 58%);
+      }
+    }
   }
 }
 
