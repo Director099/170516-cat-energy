@@ -16,17 +16,32 @@
   width: 100%;
   border: 1px solid $gray-light;
   padding: 14px 15px;
+  transition: $time;
 
-  &--textarea {
-    height: 151px;
+  &--mail {
+    padding: 15px 45px 15px 15px;
+    background: url("../img/icon-mail.svg") no-repeat 95.5% 50%;
+    background-size: 18px;
+  }
 
-    @media (min-width: $screen-md) {
-      height: 173px;
-    }
+  &--phone {
+    padding: 15px 45px 15px 15px;
+    background: url("../img/icon-phone.svg") no-repeat 95% 50%;
+    background-size: 20px;
   }
 
   @media (min-width: $screen-md) {
     padding: 15px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
   }
 }
 

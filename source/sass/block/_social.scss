@@ -1,6 +1,61 @@
 .social {
   @include ul-reset();
-  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
   border-top: 1px solid $gray-lighter;
   border-bottom: 1px solid $gray-lighter;
+
+  @media (min-width: $screen-md) {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.social__item {
+  margin: 0 16px;
+  cursor: pointer;
+
+  @media (min-width: $screen-md) {
+    margin: 0 10px;
+  }
+
+  &--ident {
+    margin: 0 24px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 20px;
+    }
+  }
+}
+
+.social__icon {
+  fill: #666666;
+  transition: $time;
+
+  @media (min-width: $screen-md) {
+    &--vk {
+      width: 31px;
+      height: 19px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  &:hover {
+    fill: $color-success;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

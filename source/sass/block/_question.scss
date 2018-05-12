@@ -123,6 +123,28 @@
   }
 }
 
+.question__textarea {
+  width: 100%;
+  border: 1px solid $gray-light;
+  padding: 14px 15px;
+  transition: $time;
+  height: 151px;
+
+  @media (min-width: $screen-md) {
+    height: 173px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
+  }
+}
+
 .question__btn {
   @media (min-width: $screen-md) {
     padding: 15px;

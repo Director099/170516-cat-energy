@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-sass");
+  grunt.loadNpmTasks('grunt-svgstore');
 
   grunt.initConfig({
     sass: {
@@ -45,6 +46,19 @@ module.exports = function(grunt) {
       }
     },
 
+    svgstore: {
+      options: {
+        formatting : {
+          indent_size : 2
+        }
+      },
+      default: {
+        files: {
+          'source/img/sprite.svg': 'source/img/*.svg',
+        },
+      },
+    },
+
     watch: {
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
@@ -54,4 +68,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask('svg', ['svgstore']);
 };

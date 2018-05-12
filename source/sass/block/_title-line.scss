@@ -33,6 +33,13 @@
     margin-bottom: 75px;
   }
 
+  &--left {
+    @media (min-width: $screen-md) and (max-width: 1299px) {
+      margin-left: 0px;
+      margin-bottom: 80px;
+    }
+  }
+
   &--ident {
     @media (min-width: $screen-md) {
       margin-bottom: 50px;

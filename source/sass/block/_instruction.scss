@@ -3,6 +3,10 @@
   @include row();
   counter-reset: section;
   margin-bottom: 23px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
 }
 
 .instruction__item {
@@ -12,6 +16,21 @@
   align-items: center;
   margin-bottom: 20px;
 
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $color-success;
+
+    @media (min-width: $screen-md) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 35px;
+    }
+  }
 
   @media (min-width: $screen-md) {
     flex: 0 0 50%;
@@ -19,6 +38,7 @@
     padding-right: 30px;
     display: block;
     min-height: 230px;
+    margin-bottom: 87px;
 
     &::after {
       counter-increment: section;
@@ -32,29 +52,53 @@
       color: $gray-lightest;
       z-index: -1;
     }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 55px;
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: inherit;
+      }
+    }
   }
 
   @media (min-width: $screen-xl) {
     flex: 0 0 25%;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 30px;
   }
-}
 
-.instruction__icon {
-  flex-shrink: 0;
-  margin-right: 20px;
-  width: 60px;
-  height: 60px;
-  background: $color-success;
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-  @media (min-width: $screen-md) {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 35px;
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 .instruction__text {
   margin: 0;
+
+  @media (min-width: $screen-md) {
+    max-width: 250px;
+  }
 }

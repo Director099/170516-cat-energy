@@ -1,0 +1,7 @@
+.owerflow {
+  overflow: hidden;
+
+  &--none {
+    overflow: auto;
+  }
+}

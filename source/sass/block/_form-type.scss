@@ -8,6 +8,7 @@
   margin-bottom: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: $time;
 
   &::after {
     content: "";
@@ -18,6 +19,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid $gray-lighter;
+    transition: $time;
 
     @media (min-width: $screen-md) {
       width: 40px;
@@ -76,5 +78,13 @@
 
   @media (min-width: $screen-md) {
     padding-left: 62px;
+  }
+
+  &:hover::after {
+    border: 1px solid #bfbfbf;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

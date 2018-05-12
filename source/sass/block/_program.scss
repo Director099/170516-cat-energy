@@ -1,9 +1,14 @@
 .program {
+  position: relative;
   background: $gray-lightest;
   padding: 40px 20px 20px;
 
   @media (min-width: $screen-md) {
-    padding: 50px 60px;
+    padding: 77px 315px 58px 52px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 80px 55px 62px;
   }
 }
 
@@ -12,42 +17,116 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 35px;
-  text-transform: uppercase;
   padding-left: 70px;
+  text-transform: uppercase;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background: $color-success;
-    border-radius: 50%;
-    transform: translateY(-50%);
+  @media (min-width: $screen-md) {
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-left: 162px;
+    margin-bottom: 70px;
   }
 }
 
 .program__link {
   position: relative;
-  display: inline-block;
   text-transform: uppercase;
   padding-right: 10px;
+  font-size: 16px;
   color: $black;
-  letter-spacing: 1px;
+  background: $gray-lightest;
+  z-index: 1;
+  transition: $time;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    width: 37px;
+    height: 12px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: $time;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  &:hover::after {
+    right: -36px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-// .program__icon {
-//   width: 50px;
-//   height: 50px;
-//   background: $color-success;
-//   border-radius: 50%;
-// }
+.program__img {
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background: $color-success;
+  border-radius: 50%;
+
+  @media (min-width: $screen-md) {
+    right: 60px;
+    top: 90px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $screen-xl) {
+    right: inherit;
+    top: 45px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.program__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $screen-md) {
+    &--slim {
+      top: 42%;
+      width: 69%;
+      height: 100%;
+    }
+
+    &--pro {
+      width: 133%;
+      height: 100%;
+    }
+  }
+}
 
 .program__text {
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   border-bottom: 1px solid $gray-lighter;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+    border: none;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border: none;
+  }
 }
 
 .program__text p {

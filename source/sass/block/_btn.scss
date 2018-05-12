@@ -9,13 +9,37 @@
   color: $white;
   cursor: pointer;
   font-size: 16px;
+  line-height: 20px;
+  transition: $time;
+
+  &:hover {
+    background: $btn--hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 
   &--light {
     background: $gray-lightest;
     color: $black;
+
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
   }
 
   &--small {
     font-size: 14px;
+
+    @media (min-width: $screen-md) {
+      font-size: 20px;
+      width: auto;
+      padding: 16px 27px;
+    }
   }
 }
