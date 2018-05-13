@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -40,16 +41,4 @@ img {
 
 table {
   font-family: $family-arial;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin-top: 0;
-}
-
-fieldset {
-  margin: 0;
 }

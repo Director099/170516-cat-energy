@@ -25,6 +25,7 @@
   &--xl-3 {
     @media (min-width: $screen-xl) {
       flex: 0 0 25%;
+      max-width: 25%;
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -33,6 +34,7 @@
   &--xl-9 {
     @media (min-width: $screen-xl) {
       flex: 0 0 75%;
+      max-width: 75%;
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -107,3 +109,5 @@
     margin-right: 45px;
   }
 }
+
+

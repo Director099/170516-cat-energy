@@ -1,6 +1,10 @@
-.logo__img {
+.logo {
+  display: block;
   width: 100%;
   max-width: 190px;
+}
+
+.logo__img {
   transition: $time;
 
   &:hover {

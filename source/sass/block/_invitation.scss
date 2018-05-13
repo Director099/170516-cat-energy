@@ -14,6 +14,7 @@
     left: 40px;
     top: 0%;
     max-width: 570px;
+    width: 100%;
     background: $white;
     padding: 35px 30px;
     transform: translateY(44%);
@@ -24,6 +25,7 @@
   @include font-title-h4();
   line-height: 20px;
   flex: 0 0 50%;
+  // max-width: 50%;
   margin: 0;
   text-transform: uppercase;
   max-width: 160px;
@@ -34,15 +36,17 @@
 
   @media (min-width: $screen-xl) {
     padding: 30px 40px;
-    max-width: inherit;
+    max-width: 50%;
   }
 }
 
 .invitation__text {
   flex: 0 0 50%;
+  // max-width: 50%;
   margin: 0;
   line-height: 21px;
   max-width: 160px;
+  width: 100%;
 
   @media (min-width: $screen-md) and (max-width: 1299px) {
     text-align: right;
@@ -50,7 +54,7 @@
 
   @media (min-width: $screen-xl) {
     padding: 30px 40px;
-    max-width: inherit;
+    max-width: 50%;
   }
 }
 

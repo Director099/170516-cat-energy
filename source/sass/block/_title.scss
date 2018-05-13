@@ -1,6 +1,7 @@
 .title {
   @include font-title();
   margin-bottom: 40px;
+  margin-top: 0;
   padding-top: 28px;
 
   @media (min-width: $screen-md) {

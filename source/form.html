@@ -17,10 +17,10 @@
               <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
             </picture>
           </a>
-          <button class="toggle-menu">
+          <button class="toggle-menu toggle-menu--no-js">
             <span>Закрыть</span>
           </button>
-          <nav class="navigation">
+          <nav class="navigation navigation--no-js">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="index.html">Главная</a>
@@ -46,11 +46,11 @@
               <fieldset class="question__field">
                 <label class="form-field">
                   <span class="form-field__text">Имя:*</span>
-                  <input class="form-field__control" type="text" placeholder="Барсик">
+                  <input class="form-field__control" type="text" placeholder="Барсик" required>
                 </label>
                 <label class="form-field">
                   <span class="form-field__text">Вес (кг):*</span>
-                  <input class="form-field__control" type="text" value="7">
+                  <input class="form-field__control" type="text" value="7" required>
                 </label>
                 <label class="form-field">
                   <span class="form-field__text">Возраст (лет):</span>
@@ -75,13 +75,19 @@
               <div class="question__column">
                 <label class="form-field form-field--ident">
                   <span class="form-field__text">E-mail:*</span>
-                  <input class="form-field__control form-field__control--mail" type="text" placeholder="kuklachev@gmail.com">
+                  <input class="form-field__control form-field__control--icon" type="text" placeholder="kuklachev@gmail.com" required>
+                  <svg class="form-field__icon" width="18" height="20">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </label>
               </div>
               <div class="question__column">
                 <label class="form-field">
                   <span class="form-field__text">Телефон:*</span>
-                  <input class="form-field__control form-field__control--phone" type="tel" placeholder="8 (960) 900-60-90">
+                  <input class="form-field__control form-field__control--icon" type="tel" placeholder="8 (960) 900-60-90" required>
+                  <svg class="form-field__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </label>
               </div>
             </div>
@@ -184,5 +190,6 @@
     <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>
