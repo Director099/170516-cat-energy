@@ -66,11 +66,13 @@
 
   @media (min-width: $screen-xl) {
     flex: 0 0 40%;
+    max-width: 40%;
     padding-left: 40px;
     padding-right: 40px;
 
     &--xl-7 {
       flex: 0 0 60%;
+      max-width: 60%;
     }
 
     &--color {
@@ -109,7 +111,6 @@
 }
 
 .example__wrapper {
-
   @media (min-width: $screen-md) {
     display: flex;
     justify-content: space-between;

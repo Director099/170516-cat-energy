@@ -12,6 +12,7 @@
 
   @media (min-width: $screen-xl) {
     flex: 0 0 50%;
+    max-width: 50%;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -26,5 +27,5 @@
 }
 
 .programs__column:last-child .programs__ident {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }

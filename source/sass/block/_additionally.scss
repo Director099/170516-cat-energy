@@ -48,6 +48,7 @@
   &--md-6 {
     @media (min-width: $screen-md) {
       flex: 0 0 50%;
+      max-width: 0 0 50%;
     }
   }
 
@@ -58,6 +59,7 @@
 
   @media (min-width: $screen-xl) {
     flex: 0 0 33.333333%;
+    max-width: 33.333333%;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -67,9 +69,10 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 6px;
+  margin-top: 0;
 
   @media (min-width: $screen-xl) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -90,7 +93,6 @@
 }
 
 .additionally__info td {
-
   &:last-child {
     text-align: right;
 
@@ -99,7 +101,7 @@
     }
 
     @media (min-width: $screen-xl) {
-      width: 16%;
+      width: 17%;
       text-align: left;
     }
   }

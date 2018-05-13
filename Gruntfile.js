@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["source/img/**/*.{png,jpg,svg}"]
+          src: ["source/img/**/*.{png,jpg}"]
         }]
       }
     },
@@ -102,9 +102,6 @@ module.exports = function(grunt) {
       options: {
         options: {
           includeTitleElement: false
-        },
-        formatting : {
-          indent_size : 2
         }
       },
       sprite: {
