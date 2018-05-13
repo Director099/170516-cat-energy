@@ -91,7 +91,7 @@
   margin-top: 13px;
 
   @media (min-width: $screen-md) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: $screen-xl) {
@@ -109,5 +109,3 @@
     margin-right: 45px;
   }
 }
-
-

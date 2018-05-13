@@ -102,9 +102,6 @@ module.exports = function(grunt) {
       options: {
         options: {
           includeTitleElement: false
-        },
-        formatting : {
-          indent_size : 2
         }
       },
       sprite: {
