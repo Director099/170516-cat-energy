@@ -79,12 +79,10 @@
 
 .form-field__icon {
   position: absolute;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
   transition: $time;
-
-  @media (min-width: $screen-md) {
-    right: 25px;
-  }
 
   @media (min-width: $screen-xl) {
     right: 20px;

@@ -34,7 +34,7 @@
   margin-top: -5px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $screen-xl) {
@@ -45,6 +45,7 @@
 
 .example__column {
   @include grid-width();
+  overflow: hidden;
 
   @media (min-width: $screen-md) {
     position: relative;
@@ -109,7 +110,7 @@
 .example__total span {
   @media (min-width: $screen-xl) {
     display: inline-block;
-    margin-right: 65px;
+    margin-right: 60px;
   }
 }
 
