@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 72px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: $screen-xl) {
@@ -20,7 +20,7 @@
   margin-bottom: 24px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $screen-xl) {
@@ -55,6 +55,11 @@
   &--ident {
     @media (min-width: $screen-md) {
       margin-bottom: 60px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 60px;
+      margin-top: -15px;
     }
   }
 }
@@ -103,7 +108,7 @@
     padding-right: 30px;
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-xl) {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -125,7 +130,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $screen-md) {
-    margin: 15px 0;
+    margin: 13px 0;
     text-align: left;
   }
 }
@@ -133,12 +138,22 @@
 .question__textarea {
   width: 100%;
   border: 1px solid $gray-light;
-  padding: 14px 15px;
+  padding: 14px 13px;
   transition: $time;
   height: 151px;
+  font-family: $family-oswald;
+  text-transform: uppercase;
+  font-size: 16px;
 
   @media (min-width: $screen-md) {
     height: 173px;
+    padding: 8px 17px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    color: $color-body;
   }
 
   &:hover {

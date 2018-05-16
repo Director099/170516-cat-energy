@@ -16,16 +16,27 @@
 .form-field__control {
   width: 100%;
   border: 1px solid $gray-light;
-  padding: 14px 15px;
+  padding: 13px 15px;
   transition: $time;
+  font-family: $family-oswald;
+  text-transform: uppercase;
+  color: $color-body;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: $screen-md) {
-    padding: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &--icon {
-    padding: 15px 45px 15px 15px;
+    padding: 13px 45px 13px 15px;
     background-size: 18px 20px;
+
+    @media (min-width: $screen-md) {
+      padding: 10px 45px 10px 20px;
+    }
   }
 
   &:hover {
@@ -34,12 +45,15 @@
 
   &:active,
   &:focus {
-    border: 1px solid #444444;
-    outline: none;
+    outline: 2px solid #444444;
 
     ~ svg {
       fill: $color-success;
     }
+  }
+
+  &::placeholder {
+    color: $color-body;
   }
 
   // &:invalid {
@@ -52,18 +66,27 @@
   flex-shrink: 0;
   margin-right: 15px;
   text-transform: uppercase;
+  color: $black-ligten;
 }
 
 .form-field.form-field--ident {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }
 
 .form-field__icon {
   position: absolute;
-  right: 20px;
+  right: 15px;
   transition: $time;
+
+  @media (min-width: $screen-md) {
+    right: 25px;
+  }
+
+  @media (min-width: $screen-xl) {
+    right: 20px;
+  }
 }

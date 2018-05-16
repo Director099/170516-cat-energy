@@ -9,6 +9,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: $time;
+  color: $black-ligten;
 
   &::after {
     content: "";
@@ -68,11 +69,17 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 7px;
+    }
   }
 
   &--check {
+    margin-bottom: 4px;
+
     @media (min-width: $screen-md) {
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
   }
 

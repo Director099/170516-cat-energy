@@ -10,6 +10,7 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
+  font-family: $family-oswald;
   transition: $time;
 
   &:hover {
@@ -22,7 +23,7 @@
 
   &--light {
     background: $gray-lightest;
-    color: $black;
+    color: $color-body;
 
     &:hover {
       background: #ebebeb;

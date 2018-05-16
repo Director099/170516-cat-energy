@@ -2,11 +2,13 @@
   text-transform: uppercase;
   font-family: $family-oswald;
   margin-bottom: 35px;
-  max-width: 330px;
+  max-width: 270px;
+  color: $black;
 
   @media (min-width: $screen-md) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
+    max-width: 330px;
   }
 }

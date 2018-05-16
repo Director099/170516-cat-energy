@@ -3,41 +3,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  transition: $time;
 
   @media (min-width: $screen-md) {
     justify-content: flex-end;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .developer__name {
   display: inline-block;
   font-family: $family-arial;
-  color: $black;
-  transition: $time;
+  color: $color-body;
+  font-size: 16px;
 
   @media (min-width: $screen-md) {
     margin-right: 10px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
 .developer__icon {
   margin-right: -5px;
   margin-top: 3px;
-}
-
-.developer__icon svg {
   fill: #666666;
   transition: $time;
+}
 
-  &:hover {
-    fill: $color-success;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.developer:hover .developer__icon  {
+  fill: $color-success;
 }

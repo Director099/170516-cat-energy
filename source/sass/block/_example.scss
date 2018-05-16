@@ -29,10 +29,12 @@
 }
 
 .example__text {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: -5px;
 
   @media (min-width: $screen-md) {
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $screen-xl) {
@@ -57,7 +59,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        height: 67.3%;
+        height: 66.3%;
         background: linear-gradient(to right, $gray-lightest 50%, #eaeaea 50%);
         z-index: -1;
       }
@@ -89,6 +91,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
+  color: $black;
 
   @media (min-width: $screen-md) {
     max-width: 192px;
