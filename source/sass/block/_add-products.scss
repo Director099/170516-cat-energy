@@ -101,8 +101,9 @@
 
 .add-products__proviso {
   max-width: 150px;
-  margin-bottom: 0;
+  margin: 0;
   line-height: 20px;
+  font-family: $family-arial;
 
   @media (min-width: $screen-md) and (max-width: 1299px) {
     text-align: left;

@@ -56,9 +56,13 @@
     color: $color-body;
   }
 
-  // &:invalid {
-  //   border: 1px solid #ff8282;
-  // }
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+
+    ~ svg {
+      fill: #ff8282;
+    }
+  }
 }
 
 .form-field__text {

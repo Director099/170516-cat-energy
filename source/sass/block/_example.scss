@@ -29,9 +29,9 @@
 }
 
 .example__text {
-  // margin-bottom: 20px;
   margin-bottom: 25px;
   margin-top: -5px;
+  font-family: $family-arial;
 
   @media (min-width: $screen-md) {
     margin-bottom: 28px;
@@ -92,6 +92,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
+  margin-top: 0;
   color: $black;
 
   @media (min-width: $screen-md) {
